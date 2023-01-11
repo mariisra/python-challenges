@@ -1,0 +1,4 @@
+#crie um programa que escreva "Olá, Mundo!" na tela.
+#create a program that writes "Hello World!" on the screen.
+
+print("Olá, Mundo!")
