@@ -1,0 +1,7 @@
+#crie um programa que leia dois números e mostre a soma entre eles.
+#create a program that reads two numbers and prints the sum between them.
+
+numero1 = float(input("Digite um valor real: "))
+numero2 = float(input("Digite outro valor real: "))
+soma = numero1 + numero2
+print("A soma entre {} e {} é {}.".format(numero1, numero2, soma))
