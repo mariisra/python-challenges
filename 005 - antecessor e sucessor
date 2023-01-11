@@ -1,0 +1,5 @@
+#faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor.
+#make a program that reads an integer and displays its successor and predecessor on the screen.
+
+numero = int(input("Digite um número: "))
+print("O seu antecessor é {} e seu sucessor é {}".format(numero - 1, numero + 1))
