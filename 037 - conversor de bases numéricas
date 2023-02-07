@@ -1,0 +1,20 @@
+#escreva um programa em python que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão: 1 para binário, 2 para octal e 3 para hexadecimal.
+#write a python program that reads any integer and asks the user to choose which will be the conversion base: 1 for binary, 2 for octal and 3 for hexadecimal.
+
+numero = int(input("Digite um número inteiro qualquer: "))
+
+print("Escolha uma das bases para conversão:")
+print("[1] converter para binário")
+print("[2] converter para octal")
+print("[3] converter para hexadecimal")
+
+opcao = int(input("Sua opção: "))
+
+if opcao == 1:
+  print("{} convertido para binário é igual a {}".format(numero, bin(numero)))
+elif opcao == 2:
+  print("{} convertido para octal é igual a {}".format(numero, oct(numero)))
+elif opcao == 3:
+  print("{} convertido para hexadeciaml é igual a {}".format(numero, hex(numero)))
+else:
+  print("Opção inválida!Tente novamente.")
