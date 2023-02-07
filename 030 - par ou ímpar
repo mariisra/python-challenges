@@ -1,0 +1,11 @@
+#crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR. 
+#create a program that reads an integer and shows on the screen whether it is EVEN or ODD.
+
+numero = int(input("Digite um número inteiro qualquer: "))
+
+x = numero % 2
+
+if x == 0:
+  print("O número {} é par.".format(numero))
+else:
+  print("O número {} é ímpar.".format(numero))
