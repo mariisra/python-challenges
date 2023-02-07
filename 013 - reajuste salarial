@@ -1,0 +1,11 @@
+#faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+#make an algorithm that reads an employee's salary and outputs their new salary, with a 15% increase.
+
+
+salario = float(input("Digite o seu salário:"))
+bonus = float(input("Digite o bonus em %:"))
+
+aumento = (bonus / 100) * salario
+
+print("Seu salário é de {} reais.".format(salario))
+print("Seu salário final é de {} reais.".format(salario + aumento))
