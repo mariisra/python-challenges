@@ -1,8 +1,12 @@
 #crie um algoritmo que leia um número inteiro e mostre o seu dobro, triplo e raiz quadrada.
+#create an algorithm that reads an integer and outputs its double, triple and square root.
 
 import math
+
 numero = int(input("Digite um número: "))
+
 numero_dobro = numero * 2
 numero_triplo = numero * 3
 numero_sqrt = math.sqrt(numero)
+
 print("Seu dobro é {}, seu triplo é {} e sua raiz quadrada é {}".format(numero_dobro, numero_triplo, numero_sqrt))
