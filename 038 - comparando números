@@ -1,0 +1,12 @@
+#escreva um programa que leia dois números inteiros e compare-os; mostrando na tela uma mensagem: o primeiro valor maior é; o segundo maior valor é; não existe valor maior os dois são iguais.
+#write a program that reads two integers and compares them; showing on the screen a message: the first largest value is; the second largest value is; There is no greater value the two are equal.
+
+valor1 = int(input("Digite valor 1(inteiro): "))
+valor2 = int(input("Digite valor 2(inteiro): ")) 
+
+if valor1 > valor2:
+  print("O maior valor foi {}".format(valor1))
+elif valor2 == valor1:
+  print("Não existe maior valor!Os dois valores são iguais.")
+else:
+  print("O maior valor foi {}".format(valor2))
