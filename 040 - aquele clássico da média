@@ -1,0 +1,14 @@
+#crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com a média atingida; média abaixo de 5 = reprovado, média entre 5 e 6.9 = recuperação e média maior que 7 = aprovado.
+#create a program that reads two grades from a student and calculates their average, showing a message at the end, according to the average achieved; average below 5 = failed, average between 5 and 6.9 = recovery and average greater than 7 = approved.
+
+nota1 = float(input("Digite sua primeira nota: "))
+nota2 = float(input("Digite sua segunda nota: "))
+
+media = (nota1 + nota2) / 2
+
+if media <= 5:
+  print("\033[31mVocê foi reprovado!\033[m")
+elif media >= 7:
+  print("\033[32mVocê foi aprovado!\033[m")
+else:
+  print("Você está de recuperaçao.")
