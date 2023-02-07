@@ -1,0 +1,11 @@
+#faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+#make an algorithm that reads the price of a product and shows its new price, with a 5% discount.
+
+preco_produto = float(input("Digite o preço do produto:"))
+desconto = float(input("Digite seu desconto em %:"))
+
+valor_desconto = (desconto / 100) * preco_produto
+
+print("Seu produto é de {} reais.".format(preco_produto))
+print("Seu desconto é de {} reais.".format(valor_desconto))
+print("Seu produto final é de {} reais.".format(v1 - valor_desconto))
