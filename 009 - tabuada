@@ -1,0 +1,5 @@
+#faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
+##make a program that reads any integer and displays its mutiplication table on the screen.
+
+v = int(input("Digite um valor inteiro qualquer, para ver sua tabuada:"))
+print(v * 0, v * 1, v * 2, v * 3, v * 4, v * 5, v * 6, v * 7, v * 8, v * 9, v * 10)
