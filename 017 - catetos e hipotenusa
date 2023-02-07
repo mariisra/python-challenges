@@ -1,0 +1,10 @@
+#faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.
+#make a program that reads the length of the opposite and adjacent sides of a right triangle, calculates and displays the length of the hypotenuse.
+
+import math
+
+co = float(input("Digite o valor do cateto oposto:"))
+ca = float(input("Digite o valor do cateto adjacente:"))
+x = (co ** 2) + (ca ** 2)
+h = math.sqrt(x)
+print("A hipotenusa desse triângulo retângulo é: {:.1f}.".format(h))
