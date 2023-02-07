@@ -1,0 +1,7 @@
+#crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porsão inteira.
+#create a program that reads any real number from the keyboard and shows its entire portion on the screen.
+
+import math
+
+numero = float(input("Digite um número real qualquer:"))
+print("Sua porsão inteira é: {}.".format(math.trunc(numero)))
