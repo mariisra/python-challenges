@@ -1,0 +1,6 @@
+#escreva um programa que converta uma temperatura digitando em graus Celsius e converta em graus Farenheit.
+#write a program that converts a temperature by typing it into degrees Celsius and converts it into degrees Fahrenheit.
+
+celsius = float(input("Quantos graus está (em Celsius)?"))
+farenheit = celsius + 273
+print("A temperatra em Farenheit é de {:.1f} graus.".format(farenheit))
