@@ -1,0 +1,15 @@
+#refaça o desafio 35 dos triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado.
+redo challenge 35 of the triangles, adding the feature of showing what kind of triangle will be formed.
+
+reta1 = float(input("Digite comprimento da primeira reta: "))
+reta2 = float(input("Digite comprimento da segunda reta: "))
+reta3 = float(input("Digite comprimento da terceira reta: "))
+
+if (reta1 + reta2 < reta3) or (reta1 + reta3 < reta2) or (reta2 + reta3 < reta1):
+  print("Não formam um triângulo.")
+elif (reta1 == reta2) and (reta1 == reta3):
+  print("É um triângulo equilatero.")
+elif (reta1 == reta2) or (reta1 == reta3) or (reta2 == reta3):
+  print("É um triângulo isósceles.")
+else:
+  print("É um triângulo escaleno.")
