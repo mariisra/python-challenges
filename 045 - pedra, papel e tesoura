@@ -1,0 +1,55 @@
+#crie um programa que faça o computador jogar jokenpô com você.
+#write a program that makes the computer play jokenpo with you.
+
+import random
+from time import sleep
+
+itens = ("pedra", "papel", "tesoura")
+
+pc = random.randint(0, 2)
+
+print("Suas opções:")
+print("[1] pedra")
+print("[2] papel")
+print("[3] tesoura")
+
+j = int(input("Digite sua jogada: "))
+
+print("JO")
+sleep(1)
+print("KEN")
+sleep(1)
+print("PO!!!")
+
+print("-=" * 12)
+print("Computador jogou {}".format(itens[pc]))
+print("Jogador jogou {}".format(itens[j - 1]))
+print("-=" * 12)
+
+if pc == 0:
+  if j == 1:
+    print("EMPATE")
+  elif j == 2:
+    print("JOGADOR VENCE")
+  elif j == 3:
+    print("COMPUTADOR VENCE")
+  else:
+    print("jogada inválida!")
+elif pc == 1:
+  if j == 1:
+      print("COMPUTADOR VENCE")
+  elif j == 2:
+    print("EMPATE")
+  elif j == 3:
+    print("JOGADOR VENCE")
+  else:
+    print("jogada inválida!")
+elif pc == 2:
+  if j == 1:
+    print("JOGADOR VENCE")
+  elif j == 2:
+    print("COMPUTADOR VENCE")
+  elif j == 3:
+    print("EMPATE")
+  else:
+    print("jogada inválida!")
