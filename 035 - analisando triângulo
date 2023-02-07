@@ -1,0 +1,15 @@
+#desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo. 
+#develop a program that reads the length of three lines and tells the user whether or not they can form a triangle.
+
+reta1 = float(input("Digite comprimento da primeira reta: "))
+reta2 = float(input("Digite comprimento da segunda reta: "))
+reta3 = float(input("Digite comprimento da terceira reta: "))
+
+if (reta1 + reta2 < reta3) or (reta1 + reta3 < reta2) or (reta2 + reta3 < reta1):
+  print("Não formam um triângulo.")
+elif (reta1 == reta2) and (reta1 == reta3):
+  print("É um triângulo equilatero.")
+elif (reta1 == reta2) or (reta1 == reta3) or (reta2 == reta3):
+  print("É um triângulo isósceles.")
+else:
+  print("É um triângulo escaleno.")
