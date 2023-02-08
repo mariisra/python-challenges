@@ -1,9 +1,0 @@
-#faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
-#write a program that shows on the screen a countdown for the burst of fireworks, going from 10 to 0, with a pause of 1 second between them.
-
-from time import sleep
-
-for c in range(10, -1, -1):
-  print(c)
-  sleep(1)
-print("BUM! BUM! POOOW!")
