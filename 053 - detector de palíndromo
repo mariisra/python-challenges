@@ -1,0 +1,15 @@
+#crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
+#create a program that reads any sentence and says if it is a palindrome, disregarding the spaces
+
+frase = str(input("Digite uma frase qualquer: ")).strip().upper()
+
+palavras = frase.split()
+junto = "".join(palavras)
+inverso = ""
+
+for letra in range(len(junto) -1, -1 , -1):
+  inverso += junto[letra]
+if inverso == junto:
+  print("É um palíndromo.")
+else:
+  print("Não é um palíndromo.")
