@@ -1,0 +1,19 @@
+#crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+#create a program that reads the year of birth of seven people. At the end, show how many people have not yet reached the age of majority and how many are already of age.
+
+from datetime import date
+
+atual = date.today().year
+
+totmaior = 0
+totmenor = 0
+
+for c in range(0, 7):
+  ano = int(input("Digite o ano que você nasceu: "))
+  idade = atual - ano
+  if idade >= 21:
+    totmaior += 1
+  else:
+    totmenor += 1
+
+print("há {} pessoas maiores de idade e {} que ainda não atingiram a maioridade.".format(totmaior, totmenor))
