@@ -1,0 +1,14 @@
+#faça um programa que leia um número qualquer e mostre o seu fatorial.
+#make a program that reads any number and displays its factorial.
+
+numero = int(input("digite o número para calcular seu fatorial: "))
+
+c = numero
+f = 1
+
+while c > 0:
+  print("{}".format(c), end="")
+  print(" * "if c > 1 else " = ", end="")
+  f *= c
+  c -= 1
+print("{}".format(f))
